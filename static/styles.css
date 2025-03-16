@@ -1,0 +1,174 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #333;
+
+}
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+.h1{
+    color: white;
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+section {
+    color: white;
+    padding: 2em;
+    margin: 1em 0;
+    background-color: rgb(16 16 19 / 40%);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #333;
+    color: white;
+    position: real;
+    width: 100%;
+    bottom: 0;
+}
+h1, h2 {
+    font-size: larger;
+    color: #fafafa;
+}
+ul, ol {
+    margin: 0;
+    padding: 0 0 0 20px;
+}
+p {
+    line-height: 1.6;
+}
+.contact{
+    margin-bottom: 52px;
+}
+
+
+/* /////////////////////////////// Home Page //////////////////////////// */
+
+
+.first-div{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+}
+.navigations{
+    padding: 39px;
+    color: #c9b5b5;
+    background-color: #0f0b0b;
+    margin-top: -16px;
+}
+button{
+  height: 53px;
+    width: 151px;
+    border-radius: 40px;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.section-div{
+    display: flex;
+    flex-direction: column;
+
+}
+.image{
+    height: 100vh;
+}
+.about{
+    display: flex;
+    flex-direction: column;
+}
+.p1{
+    font-size: 20px;
+}
+.aboutSecond{
+    background: #181a2e;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* /////////////////////// for the feature sections ///////////////////////// */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #070606;
+    color: #333;
+}
+header {
+    background-image: url("image/17263.jpg");  /* Set the background image */
+    background-size: cover;  /* Cover the full page */
+    background-position: center;  /* Center the image */
+    background-repeat: no-repeat;
+    background-color: #161414;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    height: 100vh;
+}
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1, h2 {
+    color: #4CAF50;
+    font-size: 58px;
+}
+ol, ul {
+    color: white;
+    margin: 0;
+    padding: 0 0 0 20px;
+}
+li {
+    margin-bottom: 10px;
+}
+footer {
+    text-align: center;
+    padding: 3px 0;
+    background-color: #151547;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+

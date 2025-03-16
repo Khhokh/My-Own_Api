@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features</title>
+    <style>
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Styles */
+nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Image Styling */
+img {
+    height: 52vh;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Desktop Layout (Default) */
+.first-div {
+    display: flex;
+    flex-direction: row;
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Text Section */
+.first-inside-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 500px;
+}
+
+h1 {
+    font-size: 28px;
+    color: #333;
+}
+
+p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Buttons Styling */
+.first-inside-inside {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* ✅ Mobile Styles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .first-div {
+        flex-direction: column; /* Stack items vertically */
+        text-align: center;
+        padding: 20px;
+    }
+
+    img {
+        height: auto; /* Let it scale naturally */
+        width: 100%; /* Take full width */
+    }
+
+    .first-inside-inside {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%; /* Full width buttons */
+    }
+}
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul style="list-style-type: none; display: flex; justify-content: space-around; padding: 10px; background-color: #333; margin: 0;">
+            <li><a href="#" style="color: white; text-decoration: none; padding: 10px;">Home</a></li>
+            <li><a href="#" style="color: white; text-decoration: none; padding: 10px;">Features</a></li>
+            <li><a href="#" style="color: white; text-decoration: none; padding: 10px;">Pricing</a></li>
+            <li><a href="#" style="color: white; text-decoration: none; padding: 10px;">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="first-div">
+        <div class="first-inside-div">
+            <h1>Welcome to the Features Section</h1>
+            <p>Explore the various features of our machine learning API designed to enhance your projects.</p>
+            <div class="first-inside-inside">
+                <button>Learn More</button>
+                <button>Sign/Login</button>
+            </div>
+        </div>
+        <img src="/machine learing API/static/image/19362653.jpg" alt="vectorimage">
+    </div>
+
+</body>
+</html>
