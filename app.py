@@ -19,7 +19,10 @@ with open("X_columns.pkl", "rb") as f:
 
 # Create symptom index dictionary for lookup
 symptom_index = {symptom: idx for idx, symptom in enumerate(X_columns)}
-
+@app.route('/favicon.ico')
+def favicon():
+    return send_from_directory('static', 'favicon.ico')
+    
 # Function to predict disease
 def predict_disease(symptoms):
     symptoms_list = symptoms.split(",")
