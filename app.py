@@ -3,6 +3,8 @@ import pickle
 import pandas as pd
 import numpy as np
 import os
+import logging
+logging.basicConfig(level=logging.DEBUG)
 
 app = Flask(__name__)
 
@@ -51,19 +53,25 @@ def index():
 
 
 # Flask API route
+
 @app.route("/predict", methods=["POST"])
 def predict():
     try:
         data = request.json
-        symptoms = data.get("symptoms", "")
+        logging.debug(f"Received data: {data}")
 
+        symptoms = data.get("symptoms", "")
         if not symptoms:
+            logging.error("No symptoms provided")
             return jsonify({"error": "No symptoms provided"}), 400
 
         result = predict_disease(symptoms)
+        logging.debug(f"Prediction result: {result}")
+
         return jsonify(result)
 
     except Exception as e:
+        logging.exception("Prediction error")
         return jsonify({"error": str(e)}), 500
 
 if __name__ == "__main__":
