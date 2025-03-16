@@ -6,7 +6,7 @@ import numpy as np
 app = Flask(__name__)
 
 # Load the trained model
-with open("disease_model (1).pkl", "rb") as f:
+with open("disease_model (2).pkl", "rb") as f:
     model = pickle.load(f)
 
 # Load the encoder
